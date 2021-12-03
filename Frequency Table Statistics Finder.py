@@ -14,21 +14,21 @@ for i in range(n):
 
 def mean(li_value, li_freq):
     summation = 0
-    for j in range(n):
+    for j in range(len(li_value)):
         summation += li_value[j]*li_freq[j]
 
-    mean = summation/n
+    mean = summation/sum(li_freq)
     return mean
 
 def median(li_value, li_freq_ini):
     li_super = []
-    for a in range(n):
+    for a in range(len(li_value)):
         li_super.append([li_value[a], li_freq_ini[a]])
 
     li_value.sort()
     li_freq = []
 
-    for b in range(n):
+    for b in range(len(li_value)):
         val = li_value[b]
         for c in li_super:
             if c[0] == val:
