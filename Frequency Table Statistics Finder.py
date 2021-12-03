@@ -1,4 +1,5 @@
 # Statistics finder
+# Coded by Taaroop
 
 n = int(input("Enter the number of columns: "))
 
@@ -81,5 +82,3 @@ print("Mean:", mean(li_value, li_freq))
 print("Mode:", mode(li_value, li_freq))
 print("Range:", my_range(li_value, li_freq))
 print("Median:", median(li_value, li_freq)) # Please keep the median at the end, as it sorts the li_value, which may harm outputs from other functions
-
-
