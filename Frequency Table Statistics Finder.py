@@ -7,8 +7,8 @@ li_value = []
 li_freq = []
 
 for i in range(n):
-    value = float(input())
-    freq = int(input())
+    value = float(input("Enter class value: "))
+    freq = int(input("Enter class frequency: "))
     li_value.append(value)
     li_freq.append(freq)
 
