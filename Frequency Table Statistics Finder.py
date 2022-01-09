@@ -9,8 +9,9 @@ li_freq = []
 for i in range(n):
     value = float(input("Enter class value: "))
     freq = int(input("Enter class frequency: "))
-    li_value.append(value)
-    li_freq.append(freq)
+    if freq != 0:
+        li_value.append(value)
+        li_freq.append(freq)
 
 def mean(li_value, li_freq):
     summation = 0
